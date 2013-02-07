@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/background2" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:maxWidth="@android:dimen/thumbnail_width"
+        android:src="@drawable/background2" />
+
+    <ImageView
+        android:id="@+id/ImageView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/background2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/ImageView01"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="112dp"
+        android:gravity="center"
+        android:text="@string/userss" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:text="@string/documents" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:background="@color/white"
+        android:onClick="ClickUserBD"
+        android:src="@drawable/database" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:background="@color/white"
+        android:onClick="ClickUserBD"
+        android:src="@drawable/databasedoc" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@color/white"
+        android:onClick="ClickUserBD"
+        android:src="@drawable/databaseknowledge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButton3"
+        android:layout_below="@+id/imageButton3"
+        android:text="@string/knowledge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/background2" />
+
+    <ImageButton
+        android:id="@+id/ImageButton01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="23dp"
+        android:background="@color/white"
+        android:onClick="ClickUserBD"
+        android:src="@drawable/note1" />
+
+    <ImageButton
+        android:id="@+id/ImageButton02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButton01"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:onClick="ClickUserBD"
+        android:src="@drawable/lamp1" />
+
+    <ImageButton
+        android:id="@+id/ImageButton03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton3"
+        android:layout_alignTop="@+id/ImageButton02"
+        android:background="@color/white"
+        android:onClick="ClickUserBD"
+        android:src="@drawable/gram1" />
+
+    <ImageButton
+        android:id="@+id/ImageButton04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageButton01"
+        android:layout_below="@+id/ImageButton02"
+        android:layout_marginTop="38dp"
+        android:background="@color/white"
+        android:onClick="ClickUserBD"
+        android:src="@drawable/message1" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageButton02"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/footer"
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:id="@+id/ImageButton05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageButton02"
+        android:layout_alignTop="@+id/ImageButton04"
+        android:background="@color/white"
+        android:onClick="ClickUserBD"
+        android:src="@drawable/kons1" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ImageButton01"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/report" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/remember" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/notice" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ImageButton04"
+        android:layout_below="@+id/ImageButton04"
+        android:gravity="center"
+        android:text="@string/dialog" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView05"
+        android:layout_alignBottom="@+id/TextView05"
+        android:layout_alignLeft="@+id/TextView03"
+        android:gravity="center"
+        android:text="@string/konsplus" />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextView06"
+        android:layout_alignLeft="@+id/ImageButton6"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/TextView06"
+        android:gravity="center"
+        android:text="@string/law" />
+
+    <ImageButton
+        android:id="@+id/ImageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView07"
+        android:layout_alignLeft="@+id/ImageButton03"
+        android:background="@color/white"
+        android:onClick="ClickUserBD"
+        android:src="@drawable/glob1" />
+ />
+
+</RelativeLayout>
